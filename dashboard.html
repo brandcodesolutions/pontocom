@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro de Ponto</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Controle de Ponto</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="camera-container">
-        <video id="camera" autoplay></video>
-        <div class="overlay">
-            <div class="face-circle"></div>
-        </div>
-        <div class="button-container">
-            <button id="entradaBtn">Registrar Entrada</button>
-            <button id="saidaBtn">Registrar Saída</button>
-        </div>
+  <div class="camera-container">
+    <!-- Vídeo da Câmera -->
+    <video id="camera" autoplay></video>
+
+    <!-- Sobreposição com a área de rosto -->
+    <div class="overlay">
+      <div class="face-mask">
+        <span>Posicione seu rosto aqui</span>
+      </div>
     </div>
-    <script src="script.js"></script>
+
+    <!-- Botões flutuantes -->
+    <div class="button-container">
+      <button id="entradaBtn">Registrar Entrada</button>
+      <button id="saidaBtn">Registrar Saída</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

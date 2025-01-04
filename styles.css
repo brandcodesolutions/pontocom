@@ -21,7 +21,7 @@ body, html {
   object-fit: cover;
 }
 
-/* Sobreposição para o círculo do rosto */
+/* Sobreposição para o formato do rosto */
 .overlay {
   position: absolute;
   top: 0;
@@ -34,13 +34,26 @@ body, html {
   pointer-events: none;
 }
 
-.face-circle {
-  width: 300px;
-  height: 300px;
+/* Máscara de rosto mais realista e ampla */
+.face-mask {
+  position: relative;
+  width: 320px;
+  height: 400px;
   border: 3px solid #00FF00;
-  border-radius: 50%;
+  border-radius: 50%; /* Formato de rosto */
   box-shadow: 0 0 15px #00FF00;
   background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.face-mask span {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
 }
 
 /* Botões flutuantes */
