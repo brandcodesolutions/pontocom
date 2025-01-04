@@ -1,0 +1,71 @@
+/* Reset básico */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Contêiner da câmera */
+.camera-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+}
+
+/* Vídeo em tela cheia */
+#camera {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Sobreposição para o círculo do rosto */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.face-circle {
+  width: 300px;
+  height: 300px;
+  border: 3px solid #00FF00;
+  border-radius: 50%;
+  box-shadow: 0 0 15px #00FF00;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* Botões flutuantes */
+.button-container {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+  z-index: 10;
+}
+
+.button-container button {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #0078d7;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.button-container button:hover {
+  background-color: #005ea6;
+}
